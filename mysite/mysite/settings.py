@@ -43,6 +43,9 @@ INSTALLED_APPS = (
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    # adding auth providers
+    'allauth.socialaccount.providers.amazon',
+    'allauth.socialaccount.providers.facebook',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -119,3 +122,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
 STATIC_URL = '/static/'
+
+### added https://django-allauth.readthedocs.io/en/latest/installation.html#django
+SITE_ID=1
